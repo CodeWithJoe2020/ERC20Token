@@ -34,7 +34,7 @@ contract SafeMath {
 contract CodeWithJoe is ERC20Interface, SafeMath {
     string public name;
     string public symbol;
-    uint8 public decimals; // 18 decimals is the strongly suggested default, avoid changing it
+    uint8 public decimals; // 8 decimals is the strongly suggested default, avoid changing it
 
     uint256 public _totalSupply;
 
@@ -47,10 +47,10 @@ contract CodeWithJoe is ERC20Interface, SafeMath {
      * Initializes contract with initial supply tokens to the creator of the contract
      */
     constructor() public {
-        name = "CodeWithJoe";
-        symbol = "CWJ";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
+        name = "1ANUNNAKY";
+        symbol = "1NN";
+        decimals = 8;
+        _totalSupply = 9000000000;
 
         balances[msg.sender] = _totalSupply;
         emit Transfer(address(0), msg.sender, _totalSupply);
